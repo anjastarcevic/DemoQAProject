@@ -28,7 +28,7 @@ public class BaseTest {
     @BeforeClass
     public void setUp() throws IOException {
         WebDriverManager.chromedriver().setup();
-        excelReader = new ExcelReader("C:\\Users\\Anja\\Desktop\\PracticeFormData.xlsx");
+        excelReader = new ExcelReader("C:\\Users\\Anja\\IdeaProjects\\DemoQAProject\\src\\test\\resources\\PracticeFormData.xlsx");
     }
 
     @AfterClass
