@@ -21,6 +21,7 @@ public class SliderPage extends BaseTest {
     public WebElement sliderValueField;
 
     public void slide() {
+        scrollToElement(slider);
         action.dragAndDropBy(slider, 100, 0).perform();
     }
 

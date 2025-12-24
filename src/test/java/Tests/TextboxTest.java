@@ -33,10 +33,10 @@ public class TextboxTest extends BaseTest {
     public void userCanAddData() {
         homePage.clickOnCardName("Elements");
         sidebar.clickOnSidebarButton("Text Box");
-        String fullName = excelReader.getStringData("TestData", 1,0);
-        String email = excelReader.getStringData("TestData", 1,1);
-        String currentAddress = excelReader.getStringData("TestData", 1,2);
-        String permanentAddress= excelReader.getStringData("TestData", 1, 3);
+        String fullName = excelReader.getStringData("TextBoxData", 1,0);
+        String email = excelReader.getStringData("TextBoxData", 1,1);
+        String currentAddress = excelReader.getStringData("TextBoxData", 1,2);
+        String permanentAddress= excelReader.getStringData("TextBoxData", 1, 3);
         textboxPage.inputFullName(fullName);
         textboxPage.inputEmail(email);
         textboxPage.inputCurrentAddress(currentAddress);
@@ -50,10 +50,10 @@ public class TextboxTest extends BaseTest {
     public void userCannotSubmitDataWithInvalidEmailFormat() {
         homePage.clickOnCardName("Elements");
         sidebar.clickOnSidebarButton("Text Box");
-        String fullName = excelReader.getStringData("TestData", 2,0);
-        String email = excelReader.getStringData("TestData", 2,1);
-        String currentAddress = excelReader.getStringData("TestData", 2,2);
-        String permanentAddress= excelReader.getStringData("TestData", 2, 3);
+        String fullName = excelReader.getStringData("TextBoxData", 2,0);
+        String email = excelReader.getStringData("TextBoxData", 2,1);
+        String currentAddress = excelReader.getStringData("TextBoxData", 2,2);
+        String permanentAddress= excelReader.getStringData("TextBoxData", 2, 3);
         textboxPage.inputFullName(fullName);
         textboxPage.inputEmail(email);
         textboxPage.inputCurrentAddress(currentAddress);

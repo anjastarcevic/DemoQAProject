@@ -46,9 +46,6 @@ public class DatePickerPage extends BaseTest {
         yearDropdown.click();
     }
 
-    public void clickOnDateTimeField() {
-        dateTimeField.click();
-    }
 
     public void selectMonth(String month) {
         for(int i = 0; i < months.size(); i++) {

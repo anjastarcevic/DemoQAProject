@@ -5,6 +5,7 @@ import Pages.HomePage;
 import Pages.Sidebar;
 import Pages.DatePickerPage;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,6 +35,9 @@ public class DatePickerTest extends BaseTest {
         datePickerPage.clickOnYearDropdown();
         datePickerPage.selectYear("1992");
         datePickerPage.selectDay("2");
+
+        Assert.assertFalse(datePickerPage.dateField.getAttribute("value").isEmpty());
+        Assert.assertEquals(datePickerPage.dateField.getAttribute("value"), "08/02/1992");
 
     }
 

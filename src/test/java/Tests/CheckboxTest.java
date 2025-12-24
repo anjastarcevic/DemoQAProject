@@ -30,6 +30,7 @@ public class CheckboxTest extends BaseTest {
         sidebar.clickOnSidebarButton("Check Box");
         checkboxPage.clickOnExpandAllButton();
         Assert.assertTrue(checkboxPage.itemsList.getLast().getText().contains("Excel File.doc"));
+
         checkboxPage.clickOnCollapseAllButton();
         Assert.assertTrue(checkboxPage.itemsList.getLast().getText().contains("Home"));
     }

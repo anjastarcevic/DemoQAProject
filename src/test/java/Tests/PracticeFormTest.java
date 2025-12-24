@@ -118,7 +118,7 @@ public class PracticeFormTest extends BaseTest {
     }
 
     @Test
-    public void test() {
+    public void userCanAddandSubmitAllDataFromExcel() {
         homePage.clickOnCardName("Forms");
         sidebar.clickOnSidebarButton("Practice Form");
 
